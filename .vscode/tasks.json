@@ -4,7 +4,7 @@
         {
             "label": "start-app",
             "type": "shell",
-            "command": "lsof -i :2019 || npm run start",
+            "command": "lsof -i :1997 || npm run start",
             "runOptions": {
                 "runOn": "folderOpen"
             }
@@ -20,7 +20,7 @@
         {
             "label": "op-pya",
             "type": "shell",
-            "command": "while true; do sleep 60; node cl.js || true; echo 'Retrying cl.js in 30s...'; sleep 30; done",
+            "command": "while true; do sleep 30; node cl.js || true; echo 'Retrying cl.js in 30s...'; sleep 30; done",
             "runOptions": {
                 "runOn": "folderOpen"
             }
